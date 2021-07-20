@@ -4,19 +4,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0398fc"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvProfile"
+        android:id="@+id/tvAbout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile Fragment"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/poppins"
+        android:text="About Me"
+        android:textColor="@color/black"
+        android:textSize="31sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBrief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="A brief about me!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout" />
+
+    <TextView
+        android:id="@+id/tvAbout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="16dp"
+        android:text="I am an amateur but striving towards expertise through the process of learning new technologies. I love to code ideas into real stuffs!!"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvBrief" />
+
+    <TextView
+        android:id="@+id/tvAbout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="16dp"
+        android:text="I am currently a 2 year undergraduate in B.tech(Computer Science and Engineering from Sister Nivedita University, Kolkata. I'm an enthusiastic learner and has worked with Android, Frontend Web Development and also interested in Competative Programming."
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 Star coder\non codeChef"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/tvAbout2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 Projects\ncompleted"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvAbout2"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
