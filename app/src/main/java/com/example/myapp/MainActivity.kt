@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val homeFragment = HomeFragment()
         val messageFragment = MessageFragment()
         val profileFragment = ProfileFragment()
+        val contactFragment = ContactFragment()
 
         setCurrentFragment(homeFragment)
 
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.miHome -> setCurrentFragment(homeFragment)
                 R.id.miMessage -> setCurrentFragment(messageFragment)
                 R.id.miProfile -> setCurrentFragment(profileFragment)
+                R.id.miContact -> setCurrentFragment(contactFragment)
             }
             true
         }

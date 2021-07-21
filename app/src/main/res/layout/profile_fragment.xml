@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:text="A brief about me!"
+        android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
