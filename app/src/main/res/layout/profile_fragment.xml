@@ -69,6 +69,7 @@
         app:layout_constraintGuide_percent="0.5" />
 
     <Button
+        android:id="@+id/btnCodechef"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3 Star coder\non codeChef"
@@ -81,6 +82,7 @@
         app:layout_constraintBottom_toBottomOf="parent"/>
 
     <Button
+        android:id="@+id/btnProject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="5 Projects\ncompleted"
