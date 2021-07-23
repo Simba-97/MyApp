@@ -9,7 +9,7 @@
     <item
         android:id="@+id/miMessage"
         android:title="Message Me"
-        android:icon="@drawable/ic_messages"/>
+        android:icon="@drawable/ic_education"/>
 
     <item
         android:id="@+id/miProfile"
