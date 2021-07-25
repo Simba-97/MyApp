@@ -166,6 +166,7 @@
         android:background="#0398fc" />
 
     <TextView
+        android:id="@+id/connect"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Also connect with me on"
@@ -178,6 +179,65 @@
         android:textColor="#ffffff"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@id/tvGithub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Github"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFF"
+        android:fontFamily="@font/poppins"/>
+
+    <TextView
+        android:id="@+id/tvLinkedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Linkedin"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintStart_toEndOf="@+id/tvGithub"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/tvTwitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twitter"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintStart_toEndOf="@+id/tvLinkedin"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/tvInstagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintStart_toEndOf="@+id/tvTwitter"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFF"/>
+
+    <TextView
+        android:id="@+id/tvYoutube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Youtube"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintTop_toBottomOf="@+id/connect"
+        app:layout_constraintStart_toEndOf="@+id/tvInstagram"
+        android:layout_marginLeft="16dp"
+        android:textColor="#FFF"/>
 
 
 

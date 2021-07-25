@@ -28,5 +28,35 @@ class ContactFragment: Fragment(R.layout.contact_fragment) {
             val locationIntent = Intent(android.content.Intent.ACTION_VIEW, Uri.parse(location))
             startActivity(locationIntent)
         }
+
+        tvGithub.setOnClickListener {
+            val gitURL = Intent(android.content.Intent.ACTION_VIEW)
+            gitURL.data = Uri.parse("https://github.com/Simba-97")
+            startActivity(gitURL)
+        }
+
+        tvLinkedin.setOnClickListener {
+            val linkedinURL = Intent(android.content.Intent.ACTION_VIEW)
+            linkedinURL.data = Uri.parse("https://www.linkedin.com/in/hritik-kumar-singh-2a7664193/")
+            startActivity(linkedinURL)
+        }
+
+        tvTwitter.setOnClickListener {
+            val twitterURL = Intent(android.content.Intent.ACTION_VIEW)
+            twitterURL.data = Uri.parse("https://twitter.com/HritikKSingh")
+            startActivity(twitterURL)
+        }
+
+        tvInstagram.setOnClickListener {
+            val instaURL = Intent(android.content.Intent.ACTION_VIEW)
+            instaURL.data = Uri.parse("https://www.instagram.com/_hritik_kumar_singh_/")
+            startActivity(instaURL)
+        }
+
+        tvYoutube.setOnClickListener {
+            val utubeURL = Intent(android.content.Intent.ACTION_VIEW)
+            utubeURL.data = Uri.parse("https://www.youtube.com/channel/UCfoPEplnGbCdkwaf6UdQVKA")
+            startActivity(utubeURL)
+        }
     }
 }
